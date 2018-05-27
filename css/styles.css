@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #fffcd5;
+  background-size: cover; }
+
+#content {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 25%;
+  height: 100%;
+  border-right: 1px solid #666; }
+
+.tram {
+  margin-top: 200px;
+  width: 100%;
+  height: 200px;
+  background: url(../img/tram.svg) -700px 0px no-repeat;
+  background-size: 100% 100%; }
+
+.left {
+  animation: mleft 1s linear; }
+
+@keyframes mleft {
+  0% {
+    background-position: 500px 0px; }
+  100% {
+    background-position: -700px 0px; } }
+
+.right {
+  animation: mright 1s linear; }
+
+@keyframes mright {
+  0% {
+    background-position: -700px 0px; }
+  100% {
+    background-position: 500px 0px; } }
